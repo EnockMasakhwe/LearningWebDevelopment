@@ -1,9 +1,10 @@
 body {
     background-color: whitesmoke;
-    background-image: url("images/html.png");
+    /* background-image: url("images/html.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    /* background-size: cover; */
 }
