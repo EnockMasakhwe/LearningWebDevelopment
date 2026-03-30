@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h4>My practice form</h4>
+    <form action="">
+        <legend>Register</legend>
+        <br>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Enter username" maxlength="20">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter password">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required placeholder="you@example.com">
+        <br><br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <br>
+        <label for="date">Year of Birth:</label>
+        <input type="date" name="birthday" min="1900-01-01" max="2025-12-31">
+        <br>
+        <label for="country">Country of Origin</label>
+        <select name="country">
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="mx">Mexico</option>
+            <option value="ke">Kenya</option>
+        </select>
+        <br>
+        <label for="browser">Choose a browser:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+        </datalist>
+        <br><br>
+        <label for="file">Upload CV:</label>
+        <input type="file" name="profile-pic" accept="image/*" multiple>
+        <br>
+        <label for="url">Portfolio Website:</label>
+        <input type="url" name="website" placeholder="https://example.com">
+        <br><br>
+        <input type="image" src="submit.png" alt="Submit" width="100">
+        <br><br>
+        <input type="checkbox" name="subscribe" id="subscribe">
+        <label for="subscribe">Subscribe to newsletter</label>
+        <br>
+        <input type="checkbox" name="T&C" id="T&C">
+        <label for="T&C">Agree to Terms & Conditions</label>
+        <br><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        <br><br>
+        <input type="button" value="Click me" onclick="alert('Ouch! That hurts!!')">
+    </form>
+
+    <!-- Full form sample -->
+     <br><br><br><br>
+     <h4>Form Example</h4>
+     <form action="/register" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Registration Form</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="3" maxlength="20" pattern="[A-Za-z0-9]+" title="Only letters and numbers allowed"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6"><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">--Select--</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+        </select><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message..."></textarea><br>
+
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" checked><br>
+
+        <label for="profile-pic">Profile Picture:</label>
+        <input type="file" id="profile-pic" name="profile-pic" accept="image/*"><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+    </fieldset>
+</form>
+</body>
+</html>
