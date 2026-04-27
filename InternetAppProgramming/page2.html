@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Features - Annotation Tools</title>
+</head>
+<body>
+
+    <h1>🛠️ HTML5 Features in Annotation</h1>
+
+    <p>
+        <a href="page1.html">📄 CV</a> |
+        <a href="page2.html">🛠️ Features</a> |
+        <a href="page3.html">📊 Gallery</a>
+    </p>
+
+    <hr>
+
+    <!-- SECTION 12.2: SVG -->
+    <h2>Annotation Shapes (SVG)</h2>
+    <svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="20" width="60" height="40" fill="none" stroke="red" stroke-width="2"/>
+        <circle cx="160" cy="40" r="20" fill="none" stroke="blue" stroke-width="2"/>
+        <polygon points="270,20 300,60 240,60" fill="none" stroke="green" stroke-width="2"/>
+    </svg>
+
+    <!-- SECTION 12.3: MathML -->
+    <h2>Accuracy Formula (MathML)</h2>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow><mi>IoU</mi><mo>=</mo><mfrac><mi>Overlap</mi><mi>Union</mi></mfrac></mrow>
+    </math>
+
+    <!-- SECTION 12.8: draggable -->
+    <h2>Draggable Objects</h2>
+    <p draggable="true" style="background:#ffeaa7; display:inline-block; padding:8px;">📦 Vehicle (drag me)</p>
+
+    <!-- SECTION 12.9 & 13.9: contenteditable -->
+    <h2>Editable Guidelines</h2>
+    <div contenteditable="true" style="border:2px solid #1abc9c; padding:10px;">✏️ Click to edit these annotation notes</div>
+
+    <!-- SECTION 12.10 & 13.13: spellcheck -->
+    <h2>Spell Check Demo</h2>
+    <textarea rows="2" cols="50" spellcheck="true">This is a tset of spelling.</textarea>
+
+    <!-- SECTION 12.11 & 13.15: data-* attributes -->
+    <h2>Hidden Project Data</h2>
+    <div data-project="TRAFFIC-001" data-images="2500" data-completed="1800" style="border:1px solid #3498db; padding:10px;">
+        Project: Traffic Signs <br>
+        <code>data-project="TRAFFIC-001" data-images="2500"</code>
+    </div>
+
+    <!-- SECTION 13: Global attributes (each once) -->
+    <h2>Global Attributes</h2>
+    <p id="unique-id" class="highlight" title="Tooltip text" style="background:yellow; padding:5px;">Hover for tooltip (id, class, style, title)</p>
+    <p lang="fr">Texte en français (lang="fr")</p>
+    <p dir="rtl">نص عربي (dir="rtl")</p>
+
+    <div>
+        <span tabindex="2">Tab order 2</span>
+        <span tabindex="1">Tab order 1</span>
+    </div>
+    <p><a href="page1.html" accesskey="h">Alt+H = Home</a></p>
+    <p hidden>This is hidden</p>
+    <p translate="no">Enock Masakhwe (don't translate)</p>
+
+    <!-- SECTION 15: Miscellaneous (each once) -->
+    <h2>Additional Features</h2>
+
+    <noscript>⚠️ JavaScript disabled</noscript>
+
+    <ruby>CVAT<rp>(</rp><rt>See-Vat</rt><rp>)</rp></ruby>
+
+    <p>User <bdi>أحمد</bdi> reviewed (bdi)</p>
+    <p><bdo dir="rtl">Reversed text</bdo> (bdo)</p>
+
+    <p>Long URL: example<wbr>.com<wbr>/long<wbr>/path</p>
+
+    <p>Command: <code>draw_box()</code> | Press <kbd>Ctrl+S</kbd> | Output: <samp>Saved</samp> | <var>n</var> = count</p>
+
+    <div><span style="background:#1abc9c;">Span</span> inside a <div>Div</div></div>
+
+    <details><summary>Click to expand</summary><p>Hidden content here</p></details>
+
+    <p>Progress: <progress value="70" max="100">70%</progress> | Score: <meter value="0.98" min="0" max="1">98%</meter></p>
+
+    <!-- SECTION 17: Validation -->
+    <p><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validator</a> | Press <kbd>F12</kbd> for DevTools</p>
+
+    <!-- SECTION 19: Doctype -->
+    <p>Doctype: <code>&lt;!DOCTYPE html&gt;</code> (HTML5)</p>
+
+    <!-- SECTION 20: Modern features -->
+    <h2>Modern HTML5</h2>
+    <img src="https://www.w3schools.com/html/pic_mountain.jpg" alt="Lazy image" loading="lazy" width="150">
+    <iframe sandbox="allow-same-origin" srcdoc="<p>Sandboxed guide</p>" width="100%" height="60"></iframe>
+    <div inert style="background:#ccc; padding:5px;"><button>Inert button (can't click)</button></div>
+
+    <hr>
+    <p><a href="#top">⬆️ Top</a> | <a href="page1.html">← Prev</a> | <a href="page3.html">Next →</a></p>
+
+</body>
+</html>
