@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f0f5 0%, #d9e2e8 100%);
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Main Container - subtle card effect */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+}
+
+/* Navigation */
+nav {
+    background: #f8f9fa;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+}
+
+nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 8px 20px;
+    margin: 0 8px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    background: #e9ecef;
+    color: #1abc9c;
+}
+
+/* Headings */
+h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 35px 0 20px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+h3, h4, h5, h6 {
+    color: #34495e;
+    margin: 20px 0 12px 0;
+    font-weight: 500;
+}
+
+/* Cards - clear distinct sections with shadow and border */
+.project-card, .feature-box, .data-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    margin: 24px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.25s ease;
+}
+
+.project-card:hover, .feature-box:hover, .data-box:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 12px;
+    color: #495057;
+}
+
+strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+em {
+    color: #3498db;
+    font-style: italic;
+}
+
+mark {
+    background: #e8f4f8;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+del {
+    color: #adb5bd;
+}
+
+ins {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+/* Lists */
+ul, ol {
+    margin: 12px 0 20px 30px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Definition List - also a card */
+dl {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 16px;
+    margin: 20px 0;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+dt {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 12px;
+}
+
+dt:first-child {
+    margin-top: 0;
+}
+
+dd {
+    margin-left: 20px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Figure */
+figure {
+    margin: 20px 0;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid #e9ecef;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-top: 8px;
+}
+
+/* SVG and MathML - card style */
+svg, math {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #e9ecef;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Interactive Elements */
+[contenteditable="true"] {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 20px 0;
+    outline: none;
+    transition: all 0.2s;
+}
+
+[contenteditable="true"]:focus {
+    border-color: #3498db;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1);
+}
+
+[draggable="true"] {
+    cursor: grab;
+    background: #f8f9fa;
+    padding: 8px 16px;
+    border-radius: 24px;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #e9ecef;
+    transition: all 0.2s;
+}
+
+[draggable="true"]:hover {
+    background: #e9ecef;
+    border-color: #cbd5e1;
+}
+
+[draggable="true"]:active {
+    cursor: grabbing;
+}
+
+/* Form Elements */
+textarea, input {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 10px 14px;
+    width: 100%;
+    max-width: 400px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+/* Details/Summary - card style */
+details {
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 20px 0;
+    border: 1px solid #e9ecef;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #2c3e50;
+    padding: 4px 0;
+}
+
+summary:hover {
+    color: #3498db;
+}
+
+/* Progress and Meter */
+progress, meter {
+    width: 100%;
+    max-width: 400px;
+    height: 8px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+progress {
+    accent-color: #1abc9c;
+}
+
+/* Code Elements */
+code, kbd, samp, var {
+    background: #f1f3f5;
+    color: #2c3e50;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+kbd {
+    background: #f1f3f5;
+    border: 1px solid #dee2e6;
+}
+
+pre {
+    background: #1e2933;
+    color: #e2e8f0;
+    padding: 20px;
+    border-radius: 16px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 0.85rem;
+    margin: 20px 0;
+}
+
+/* Blockquote */
+blockquote {
+    background: #f8f9fa;
+    border-left: 4px solid #1abc9c;
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-radius: 12px;
+    font-style: italic;
+    color: #495057;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+/* Address */
+address {
+    background: #f8f9fa;
+    padding: 16px 20px;
+    border-radius: 16px;
+    font-style: normal;
+    margin: 20px 0;
+    border: 1px solid #e9ecef;
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #cbd5e1, transparent);
+    margin: 35px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 45px;
+    padding: 24px;
+    background: #f8f9fa;
+    color: #6c757d;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid #e9ecef;
+    font-size: 0.85rem;
+}
+
+footer a {
+    color: #3498db;
+}
+
+/* Aside - distinct card */
+aside {
+    background: #f0f7ff;
+    padding: 24px;
+    border-radius: 16px;
+    margin: 28px 0;
+    border-left: 4px solid #3498db;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Grid Layout for cards */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.grid-2 .feature-box,
+.grid-2 .project-card {
+    margin: 0;
+}
+
+/* Badge */
+.badge {
+    background: #e8f4f8;
+    color: #2c3e50;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: inline-block;
+    margin: 3px;
+}
+
+/* Top link */
+.top-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    .project-card, .feature-box, .data-box {
+        padding: 16px;
+    }
+    
+    .grid-2 {
+        gap: 15px;
+    }
+}
